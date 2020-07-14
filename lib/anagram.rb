@@ -12,5 +12,6 @@ class Anagram
         matching_words << word_from_list
       end
     end
+    matching_words
   end
 end
