@@ -5,10 +5,10 @@ class Anagram
     @word = word
   end
 
-  def match(word, word_list)
+  def match(word_list)
     matching_words = []
     word_list.each do |word_from_list|
-      if word_from_list.split.sort == word.split.sort
+      if word_from_list.split.sort == @word.split.sort
         matching_words << word_from_list
       end
     end
